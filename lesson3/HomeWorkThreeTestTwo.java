@@ -40,11 +40,11 @@ public class HomeWorkThreeTestTwo {
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select/option[2]")));
         chromeDriver.findElement(By.xpath("//select/option[2]")).click();
         chromeDriver.findElement(By.xpath("//button[@name='move']")).click();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         chromeDriver.findElement(By.xpath("//a[@href='/u-mail/folder/1']")).click();
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("umail_check_all")));
         chromeDriver.findElement(By.name("umail_check_all")).click();
-        chromeDriver.findElement(By.xpath("//button[2]")).click();
+        chromeDriver.findElement(By.xpath("//button[3]")).click();
 
         Thread.sleep(3000);
         chromeDriver.quit();
